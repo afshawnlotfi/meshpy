@@ -1,0 +1,2 @@
+# Delimiters
+newline = "\n"
