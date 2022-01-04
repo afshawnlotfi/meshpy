@@ -12,6 +12,6 @@ class Geometry:
     @property
     def grouped(self) -> list[tuple[int, float, float]]:
         return [
-            tuple((i, self.x[i], self.y[i], self.z[i] if self.z else 0))
+            tuple((i, self.x[i], self.y[i], self.z[i] if self.z else None))
             for i in range(0, self.point_quantity)
         ]

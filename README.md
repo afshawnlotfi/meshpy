@@ -14,8 +14,8 @@ from meshpy import ExportType, Mesh
 
 x = np.array([1,3,3,1])
 y = np.array([4,4,2,2])
-mesh = Mesh.from_coords(x, y)
-mesh.export(ExportType.Geo,filename="square.geo")
+mesh = Mesh.from_coords("square", x, y)
+Mesh.export(mesh, "square.geo")
 ```
 ![./assets/square.jpg](./assets/square.jpg)
 
